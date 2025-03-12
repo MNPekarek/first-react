@@ -1,0 +1,23 @@
+.nav-bar {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(106, 60, 103);
+}
+
+.nav-bar-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 1rem;   
+    margin-top: 2px;
+    
+}
