@@ -1,6 +1,7 @@
 import CartWidget from '../CartWidget/CartWidget';
 import './Navbar.css'
 import logo from '../../assets/logo.webp'
+import { Link } from 'react-router';
 
 
 
@@ -10,7 +11,9 @@ function Navbar() {
         <nav className='nav-bar'>
             <img src={logo} className='logo' alt="logo" />           
           <ul className='nav-bar-items'>
-            <li>Inicio</li>
+            <Link to="/">
+               <li>Inicio</li>
+            </Link>
             <li>Productos</li>
             <li>Contacto</li>
           </ul>

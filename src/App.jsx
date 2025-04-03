@@ -1,14 +1,19 @@
-
+import { BrowserRouter, Route, Routes } from 'react-router'
 import './App.css'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Navbar from './components/Navbar/Navbar'
+import ItemDetail from './components/ItemDetail/ItemDetail'
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
     <Navbar/>
-    <ItemListContainer greetings="Mensaje de bienvenida, se estan cargando los productos..."/>    
-    </>
+    <Routes>
+      <Route path='/' element={<ItemListContainer />}/>
+      <Route path='/detalle/:id' element={<ItemDetail/>}/>
+    </Routes>
+    </BrowserRouter>
+    
   )
 }
 
