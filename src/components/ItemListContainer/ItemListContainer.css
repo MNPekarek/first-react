@@ -5,3 +5,21 @@
     width: 100%;
     height: 100%;
 }
+
+@media  (max-width: 576px) {
+    .container-productos {
+        flex-direction: column;
+    }    
+}
+@media  (max-width: 768px) {
+    .container-productos {
+        flex-direction: column;
+    }    
+}
+
+.loaderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}

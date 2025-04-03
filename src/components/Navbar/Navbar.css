@@ -2,7 +2,7 @@
     display: flex;
     height: 5rem;
     width: 100%;
-    background-color: rgb(106, 60, 103);
+    background-color: #6a3c67;
 }
 
 .nav-bar-items {
@@ -20,4 +20,16 @@
     margin-left: 1rem;   
     margin-top: 2px;
     
+}
+
+li {
+    color: white;    
+}
+
+li:hover {
+    color: #2c0329;;
+}
+
+.link {
+    text-decoration: none;
 }

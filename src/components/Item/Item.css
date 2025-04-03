@@ -1,0 +1,17 @@
+.btn {
+    text-align: center;
+    background-color: rgb(136, 98, 124);
+    color: white; 
+    width: 10rem; 
+}
+
+.btn:hover {
+    background-color: rgb(96, 76, 115);
+    color: white;
+}
+
+.modificarCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

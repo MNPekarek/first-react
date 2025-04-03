@@ -1,11 +1,7 @@
-
 import './ItemCount.css'
-
 
 function ItemCount({ stock, contador, setContador}) {   
     
-    
-
     function modificarContador(operacion){
        if (operacion === "+") {
         if (contador < stock) {
@@ -19,14 +15,14 @@ function ItemCount({ stock, contador, setContador}) {
     };
 
     return (
-     <div style={{display: "flex", flexDirection: "column", padding: "2rem"}}> 
+     <div className='contenedorContador'> 
         <div style={{display: "flex", width: "10rem", padding: "2rem", justifyContent: "center"}}> 
-            <button className='btn btn-secondary' style={{width: "15rem"}} onClick={() => modificarContador("-")}>-</button>
-            <p>{contador}</p>
-            <button className='btn btn-secondary' style={{width: "15rem"}} onClick={() => modificarContador("+")}>+</button>                          
+            <button className='btn btn-secondary ' onClick={() => modificarContador("-")}>-</button>
+            <p className='m-2'>{contador}</p>
+            <button className='btn btn-secondary' onClick={() => modificarContador("+")}>+</button>                          
         </div>
     </div>
-    )
-}            
+    );
+};            
 
 export default ItemCount;
