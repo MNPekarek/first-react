@@ -33,13 +33,14 @@ function ItemDetail() {
       </div>
     )
          : 
-         <div className="card p-4">
+         <div className="item card p-4 modificarCard">
              {producto ? 
                 <>
                     <h3 className="card-header">{producto.nombre}</h3>
-                    <div className="card-body">
+                    <img src={producto.img} alt={producto.nombre} />
+                    <div className="card-body modificarCardBody">
                         <h5>Precio: ${producto.precio}</h5>
-                        <h5>Categoria: <b>{producto.categoria.toUpperCase()}</b></h5>
+                        <h5>Categoria: <b>{producto.categoria}</b></h5>
                         <p><b>{producto.descripcion}</b></p>
                         <p>Quedan <b>{producto.stock}</b> disponibles</p>
                         <ItemCount stock={producto.stock} contador={contador} setContador={setContador} />

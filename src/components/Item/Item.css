@@ -12,15 +12,19 @@
 
 
 .modificarCard{
-    background-color: #fff;
+    background-color: #f4c6c6b5;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* display: flex;
+    /* display: flex; */
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
 }
 
 img {
     width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
 }

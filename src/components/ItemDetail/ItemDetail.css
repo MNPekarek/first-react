@@ -9,3 +9,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.modificarCardBody{
+    justify-content: center;
+    align-items: center;
+}

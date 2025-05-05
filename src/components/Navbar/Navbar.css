@@ -1,8 +1,9 @@
 .nav-bar {
     display: flex;
-    height: 5rem;
+    height: 3rem;
     width: 100%;
     background-color: #6a3c67;
+    align-items: center;
 }
 
 .nav-bar-items {
@@ -15,8 +16,8 @@
 }
 
 .logo {
-    width: 75px;
-    height: 75px;
+    width: 45px;
+    height: 45px;
     margin-left: 1rem;   
     margin-top: 2px;
     

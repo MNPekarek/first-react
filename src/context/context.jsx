@@ -50,7 +50,7 @@ export const ContextProvider = ({children}) => {
     }
 
     return (
-        <AppContext.Provider value={{ productos, carrito, agregarAlCarrito}}>
+        <AppContext.Provider value={{ productos, carrito, setCarrito, agregarAlCarrito}}>
             {children}
         </AppContext.Provider>
     )

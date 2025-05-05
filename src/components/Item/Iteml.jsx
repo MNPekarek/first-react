@@ -14,7 +14,7 @@ function Item({ producto}) {
         <img src={img} alt={nombre} />
         <h5 className='card-body'>Precio: ${precio}</h5>    
         <p>Quedan {stock} disponibles</p>
-        <button className='btn btn-secondary my-2' onClick={() => agregarAlCarrito(producto, 1)}>Agregar al carrito</button> 
+        <button className='btn my-2' onClick={() => agregarAlCarrito(producto, 1)}>Agregar al carrito</button> 
         <Link to={`/detalle/${id}`}>
            <button className='btn'>Ver detalle</button>                 
         </Link> 
