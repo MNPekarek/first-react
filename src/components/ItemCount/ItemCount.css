@@ -1,6 +1,27 @@
 .contenedorContador {
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
+    
+    padding: 1rem;
+    
 }
+
+.contador {
+    display: flex;
+    
+    padding: 1rem;
+   
+}
+
+.btn-contador,.btn-contador2 {
+    padding: 10px 10px;  
+    background-color: #6a3c67;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn-contador2 {
+    padding: 8px 8px; 
+
+}
+
 

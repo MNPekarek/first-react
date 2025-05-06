@@ -21,7 +21,7 @@ const CartDropdown = () => {
             <div className="total">
                 <h4>Total: ${carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0)}</h4>
             </div>
-            <button onClick={() => navigate("/carrito")}>Ver carrito</button>
+            <button onClick={() => navigate("/carrito")} className="btn">Ver carrito</button>
             
         </div>
     )

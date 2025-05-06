@@ -10,7 +10,25 @@
     flex-direction: column;
 }
 
-.modificarCardBody{
-    justify-content: center;
+.item-detail-container {
+    display: flex;
     align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.item-detail-img {
+    flex: 1;
+    text-align: center;
+}
+
+.item-detail-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-detail-info {
+    flex: 1;
 }

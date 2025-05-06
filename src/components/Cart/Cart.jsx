@@ -1,4 +1,5 @@
-import { useAppContext } from "../context/context"
+import { Link } from "react-router";
+import { useAppContext } from "../../context/context"
 import './Cart.css'
 
 
@@ -8,7 +9,6 @@ const Cart = () => {
     const eliminarProducto = (id) => {
         setCarrito(carrito.filter((producto) => producto.id  !== id))
     }
-
     return (
         <div className="cart-container">
             <h2>Carrito de compras</h2>
@@ -23,14 +23,16 @@ const Cart = () => {
                        <p>Precio: ${producto.precio}</p>
                        <p>Cantidad: {producto.cantidad}</p>
                        <p>Total: ${producto.precio * producto.cantidad}</p>
-                       <button onClick={() => eliminarProducto(producto.id)}>Eliminar</button>
+                       <button onClick={() => eliminarProducto(producto.id)} className="btnCancel">❌</button>
                     </div>
                 </div>
                 ))
             )}
             <div className="cart-total">
                 <h3>Total: ${carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0)}</h3>
+                <Link to={`/ordenes`}>
                 <button className="checkout-btn">Finalizar Compra</button>                
+                </Link>
             </div>
         </div>
     )
